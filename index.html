@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Code Editor</title>
+</head>
+<body>
+
+    <div class="options">
+        <button class="option" id="layout-btn">Change Layout</button>
+        <button class="option" id="run-btn">Run Code</button>
+        <button class="option" id="theme-btn">Dark Mode</button>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <div class="html block">
+                <label><i class="fa-brands fa-html5" style="color: orangered;"></i>HTML</label>
+                <textarea id="html-code"></textarea>
+            </div>
+            <div class="css block">
+                <label><i class="fa-brands fa-css3-alt" style="color: dodgerblue;"></i>CSS</label>
+                <textarea id="css-code"></textarea>
+            </div>
+            <div class="javascript block">
+                <label><i class="fa-brands fa-js" style="color: orange;"></i>JavaScript</label>
+                <textarea id="js-code"></textarea>
+            </div>
+        </div>
+
+        <div class="right">
+            <iframe id="output" title="output"></iframe>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
